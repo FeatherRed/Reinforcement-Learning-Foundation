@@ -59,5 +59,5 @@ if __name__ == "__main__":
             pbar.update(1)
             # print("Iteration: {}/{}, Action: {}, Loss: {}, Epsilon {}, Reward: {}".format(
             #     iter + 1, n_iter, action, loss, epsilon, reward))
-            if iter + 1 % 10000 == 0:
+            if (iter + 1) % 10000 == 0:
                 torch.save(estimator.model, "{}/{}".format((save_path, iter + 1)))
